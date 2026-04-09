@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmniFlow | Master Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>OmniFlow</h2>
+        <nav>
+            <ul>
+                <li class="active">Overview</li>
+                <li>Bakery</li>
+                <li>Water Factory</li>
+                <li>Printing Press</li>
+                <li>Reports</li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <header>
+            <h1>Master Insights</h1>
+            <div id="trial-counter" class="badge">24 Days Remaining</div>
+        </header>
+
+        <section class="stats-grid">
+            <div class="card profit-leader">
+                <h3>Top Performer</h3>
+                <p id="top-biz">Bakery</p>
+                <span class="trend">+12% this week</span>
+            </div>
+            <div class="card cash-flow">
+                <h3>Total Cash Flow</h3>
+                <p>$45,200</p>
+            </div>
+        </section>
+
+        <section class="chart-container">
+            <canvas id="revenueChart"></canvas>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
